@@ -87,31 +87,29 @@ The final deliverable is a **portfolio-ready AI toolkit** capable of performing 
 ```bash    
 git clone https://github.com/yourusername/vision-ai-5days.git
 cd vision-ai-5days
+```
 
-
-2.2️⃣ Open in Google Colab
+2️⃣ Open in Google Colab
 Upload the vision_ai_final.ipynb file to Google Colab
 
 Enable GPU from Runtime → Change runtime type → GPU
 
 3️⃣ Install dependencies
-python
-Copy
-Edit
+``` bash
 !pip install kaggle tensorflow matplotlib seaborn scikit-learn
+```
+
 4️⃣ Setup Kaggle API (for Cats vs Dogs dataset)
+
 Get your API key from Kaggle Account Settings → Create API Token
 
 Upload kaggle.json to Colab:
-
-python
-Copy
-Edit
-from google.colab import files
-files.upload()  # upload kaggle.json here
+```python
+from google.colab import files files.upload()  # upload kaggle.json here
 !mkdir -p ~/.kaggle
 !mv kaggle.json ~/.kaggle/
 !chmod 600 ~/.kaggle/kaggle.json
+```
 5️⃣ Run the notebook
 Execute all cells sequentially from Day 01 to Day 05
 
