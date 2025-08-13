@@ -84,6 +84,54 @@ The final deliverable is a **portfolio-ready AI toolkit** capable of performing 
 ## 🚀 How to Run the Project  
 
 1. **Clone this repo**  
-```bash
+```bash    
 git clone https://github.com/yourusername/vision-ai-5days.git
 cd vision-ai-5days
+
+
+2.2️⃣ Open in Google Colab
+Upload the vision_ai_final.ipynb file to Google Colab
+
+Enable GPU from Runtime → Change runtime type → GPU
+
+3️⃣ Install dependencies
+python
+Copy
+Edit
+!pip install kaggle tensorflow matplotlib seaborn scikit-learn
+4️⃣ Setup Kaggle API (for Cats vs Dogs dataset)
+Get your API key from Kaggle Account Settings → Create API Token
+
+Upload kaggle.json to Colab:
+
+python
+Copy
+Edit
+from google.colab import files
+files.upload()  # upload kaggle.json here
+!mkdir -p ~/.kaggle
+!mv kaggle.json ~/.kaggle/
+!chmod 600 ~/.kaggle/kaggle.json
+5️⃣ Run the notebook
+Execute all cells sequentially from Day 01 to Day 05
+
+On Day 05, upload a custom image to test predictions
+
+📌 Notes
+The Cats vs Dogs dataset download will fail without a valid Kaggle API key.
+
+CIFAR-10 and MNIST are built into Keras and will download automatically.
+
+Training times vary depending on GPU availability.
+
+📜 License
+This project is licensed under the MIT License. You are free to use, modify, and distribute it with attribution.
+
+👏 Acknowledgements
+Kaggle for providing datasets
+
+TensorFlow/Keras for deep learning tools
+
+Vision AI Bootcamp instructors for guidance
+
+
